@@ -1,52 +1,84 @@
-# GDG MIET Google Cloud Skill Badge Tracker
+# ☁️ GDG on Campus MIET - Google Cloud Skill Badge Tracker
 
-A clean, modern, and responsive Streamlit web application designed for the **GDG MIET community** to track students' progress across the 10 predefined Google Cloud Skill Badges from their public Google Skills Boost profile.
-
----
-
-## 🎨 Theme & UI Highlights
-
-- **GDG MIET Branding**: Google 4-color strip (Blue, Red, Yellow, Green) with Google Material design styling.
-- **Compact Header**: Minimal header (under 170px) with community title and subtitle.
-- **Privacy First**: Masks profile IDs (e.g., `skills.google/public_profiles/abc12...99z`).
-- **4 Key Metrics**: Completed, Remaining, Credits earned, and Completion rate.
-- **Interactive Filters & Sorting**:
-  - Filter by status: *All*, *Not started*, *Completed*
-  - Filter by category: *Compute*, *Security and IAM*, *AI and ML*, *Generative AI*, *Gemini*, *DeepMind*
-  - Sort by: *Incomplete first* (default), *Completed first*, *Campaign order*, *Highest credits*, *Lowest credits*
-- **Action-Oriented Cards**: Shows *Start badge* or *View badge* with direct official links and credit indicators.
+A simple and automated web application built with **Python & Streamlit** that enables students to track their progress across the 10 predefined Google Cloud Skill Badges from their public Google Skills Boost profile.
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 Live Demo & Workflow
 
-### 1. Install dependencies
+1. Paste your public **Google Cloud Skills Boost** profile URL into the input field.
+2. Click **🚀 Check My Progress**.
+3. The application automatically fetches your public profile:
+   - Displays your verified name and profile avatar.
+   - Shows all **Completed Badges** under *Fetched Badges* along with completion dates and official badge artwork.
+   - Lists all **Remaining Badges** with direct course links to complete them.
+   - Calculates your live **Completion Rate (%)** and progress metrics.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend & App Framework:** [Streamlit](https://streamlit.io/)
+- **Backend & Logic:** Python 3.10+
+- **Data Scraping & Extraction:** Requests, BeautifulSoup4
+- **Data Storage:** JSON
+
+---
+
+## 📋 Predefined 10 Google Cloud Skill Badges
+
+| # | Badge Title | Category |
+|---|---|---|
+| 1 | The Basics of Google Cloud Compute | Compute |
+| 2 | Configure Service Accounts and IAM Roles for Google Cloud | Security and IAM |
+| 3 | Implement Speech and Language Solutions with Pre-trained APIs | AI and ML |
+| 4 | Develop AI-Powered Prototypes in Google AI Studio | Generative AI |
+| 5 | Analyze Images with the Cloud Vision API | AI and ML |
+| 6 | Prompt Design in Agent Platform | Generative AI |
+| 7 | Explore Generative AI in Agent Platform | Generative AI |
+| 8 | Create Your First Gemini Enterprise Application | Gemini |
+| 9 | Orchestrate Multi-agent Workflows with Gemini Enterprise | Gemini |
+| 10 | Google DeepMind: Train A Small Language Model | DeepMind |
+
+---
+
+## 💻 Local Setup & Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/kartikanshgoyal/GDG-MIET-Google-Cloud-Skill-Badge-Tracker.git
+cd GDG-MIET-Google-Cloud-Skill-Badge-Tracker
+```
+
+### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run the application
+### 3. Run the Streamlit application
 ```bash
 streamlit run app.py
 ```
 
-The application will be accessible at **`http://localhost:8501`**.
+The app will launch in your browser at `http://localhost:8501`.
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-gdg_cloud_calci/
-│
-├── app.py                     # Main Streamlit application
+├── app.py                     # Main Streamlit dashboard application
+├── badge_card.py              # Badge card UI component with official artwork
+├── profile_scraper.py         # Google Skills Boost profile scraper
+├── utils.py                   # URL validation and privacy masking helpers
+├── data/
+│   └── campaign_badges.json   # Predefined 10 campaign skill badges data
 ├── requirements.txt           # Python dependencies
-├── README.md                  # Project documentation
-│
-├── badge_card.py              # Accessible badge card rendering component
-├── profile_scraper.py         # Requests & BeautifulSoup scraper for Google Skills Boost
-├── utils.py                   # URL validation, privacy masking, credit helpers
-│
-└── data/
-    └── campaign_badges.json   # 10 predefined campaign skill badges
+└── README.md                  # Project documentation
 ```
+
+---
+
+## 👥 Community
+
+Built for the **GDG on Campus MIET** community.
