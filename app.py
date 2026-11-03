@@ -199,6 +199,18 @@ st.markdown(
         background: rgba(255, 255, 255, 0.04);
         padding: 4px;
     }
+    .badge-icon-box {
+        width: 82px;
+        height: 82px;
+        border-radius: 12px;
+        background: rgba(66, 133, 244, 0.08);
+        border: 1px solid rgba(66, 133, 244, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 38px;
+        user-select: none;
+    }
     .badge-emoji-fallback {
         font-size: 42px;
     }
