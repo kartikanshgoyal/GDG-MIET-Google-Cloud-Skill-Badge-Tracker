@@ -1,22 +1,13 @@
 import html
 import streamlit as st
 
-# Clean SVG badge icons for categories when official badge PNG is not yet earned
-CATEGORY_ICONS = {
-    "Compute": "💻",
-    "Security and IAM": "🔐",
-    "AI and ML": "🧠",
-    "Generative AI": "✨",
-    "Gemini": "💎",
-    "DeepMind": "🧬"
-}
+# Official Google Cloud Skill Badge artwork image (verified active 200 PNG)
+DEFAULT_BADGE_IMAGE = "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
 
 def render_badge_card(badge):
     """
-    Renders an accessible Dark Mode badge card.
-    If official badge image is earned and available, displays it.
-    If image fails to load or not yet completed, displays a sleek Google Cloud themed icon box
-    instead of a broken image icon.
+    Renders an accessible Dark Mode badge card with official badge artwork.
+    Uses the verified official Google Cloud badge artwork for all badges.
     """
     is_completed = badge.get("completed", False)
     status_label = "Completed" if is_completed else "Not started"
@@ -25,24 +16,16 @@ def render_badge_card(badge):
     title = html.escape(str(badge["title"]))
     category = html.escape(str(badge["category"]))
     course_url = html.escape(str(badge["course_url"]), quote=True)
-    icon = html.escape(str(badge.get("icon", "☁️")))
 
-    img_url = badge.get("image_url") or badge.get("fallback_image")
-    img_url_escaped = html.escape(str(img_url), quote=True) if img_url else ""
+    # Use fetched image if earned, otherwise the verified official Google Cloud badge artwork
+    img_url = badge.get("image_url") or badge.get("fallback_image") or DEFAULT_BADGE_IMAGE
+    img_url_escaped = html.escape(str(img_url), quote=True)
     
     completed_class = "completed-badge" if is_completed else "pending-badge"
     earned_date = html.escape(str(badge.get("earned_date", ""))) if badge.get("earned_date") else ""
     date_display = f'<span class="badge-date">({earned_date})</span>' if earned_date else ''
 
-    # Clean fallback: If image fails to load, gracefully hide img and show sleek category icon
-    if img_url_escaped:
-        img_html = f'''
-        <img src="{img_url_escaped}" alt="{title}" class="badge-artwork"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
-        <div class="badge-icon-box" style="display:none;">{icon}</div>
-        '''
-    else:
-        img_html = f'<div class="badge-icon-box">{icon}</div>'
+    img_html = f'<img src="{img_url_escaped}" alt="{title}" class="badge-artwork"/>'
 
     html_content = f"""
     <div class="custom-badge-card {completed_class}">

@@ -4,7 +4,7 @@
     "title": "The Basics of Google Cloud Compute",
     "category": "Compute",
     "course_url": "https://www.skills.google/course_templates/754",
-    "icon": "🖥️",
+    "icon": "\ud83d\udda5\ufe0f",
     "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   },
   {
@@ -12,71 +12,71 @@
     "title": "Configure Service Accounts and IAM Roles for Google Cloud",
     "category": "Security and IAM",
     "course_url": "https://www.skills.google/course_templates/702",
-    "icon": "🔐",
-    "fallback_image": "https://cdn.qwiklabs.com/q7q8E9V6Q8N9g3d7gVNFe3AoQb8VvE3d3O5e7Qv6vZA%3D"
+    "icon": "\ud83d\udd10",
+    "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   },
   {
     "id": 3,
     "title": "Implement Speech and Language Solutions with Pre-trained APIs",
     "category": "AI and ML",
     "course_url": "https://www.skills.google/course_templates/700",
-    "icon": "🗣️",
-    "fallback_image": "https://cdn.qwiklabs.com/W%2FApgdYs%2Bn4QOYhy42XW40XtBAuCpET%2FsIo2XoBiDEo%3D"
+    "icon": "\ud83d\udde3\ufe0f",
+    "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   },
   {
     "id": 4,
     "title": "Develop AI-Powered Prototypes in Google AI Studio",
     "category": "Generative AI",
     "course_url": "https://www.skills.google/course_templates/1426",
-    "icon": "🧪",
-    "fallback_image": "https://cdn.qwiklabs.com/Yp5A6j5w4nW8k8Z3p3E6W3s6F3eT6W3s6F3eT6W3Q3s%3D"
+    "icon": "\ud83e\uddea",
+    "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   },
   {
     "id": 5,
     "title": "Analyze Images with the Cloud Vision API",
     "category": "AI and ML",
     "course_url": "https://www.skills.google/course_templates/633",
-    "icon": "👁️",
-    "fallback_image": "https://cdn.qwiklabs.com/bFnXIJSqdRkfMk1VNqiZPIJQJhJ9bP%2BkWz2c9nZr0bU%3D"
+    "icon": "\ud83d\udc41\ufe0f",
+    "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   },
   {
     "id": 6,
     "title": "Prompt Design in Agent Platform",
     "category": "Generative AI",
     "course_url": "https://www.skills.google/course_templates/976",
-    "icon": "✍️",
-    "fallback_image": "https://cdn.qwiklabs.com/p1iBbR0Nf2F7EeVFvAoT4v1KfAqlMME1bkAw6FJYKHY%3D"
+    "icon": "\u270d\ufe0f",
+    "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   },
   {
     "id": 7,
     "title": "Explore Generative AI in Agent Platform",
     "category": "Generative AI",
     "course_url": "https://www.skills.google/course_templates/959",
-    "icon": "🤖",
-    "fallback_image": "https://cdn.qwiklabs.com/JcLHLm4KBWLBBY7Ua8QCk0N1qRKQ9cHZl5K5F5xQfxE%3D"
+    "icon": "\ud83e\udd16",
+    "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   },
   {
     "id": 8,
     "title": "Create Your First Gemini Enterprise Application",
     "category": "Gemini",
     "course_url": "https://www.skills.google/course_templates/1586",
-    "icon": "💎",
-    "fallback_image": "https://cdn.qwiklabs.com/uXbNMIbLGAEMEJz5kCn0yfxFiqr9Ap2RYqjcB6ghFKs%3D"
+    "icon": "\ud83d\udc8e",
+    "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   },
   {
     "id": 9,
     "title": "Orchestrate Multi-agent Workflows with Gemini Enterprise",
     "category": "Gemini",
     "course_url": "https://www.skills.google/course_templates/1682",
-    "icon": "🔗",
-    "fallback_image": "https://cdn.qwiklabs.com/XmYqpn9t5vbq4dJKNOvUZzK6T%2B8H2Zs5VHaF3aGm2gQ%3D"
+    "icon": "\ud83d\udd17",
+    "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   },
   {
     "id": 10,
     "title": "Google DeepMind: Train A Small Language Model",
     "category": "DeepMind",
     "course_url": "https://www.skills.google/course_templates/1453",
-    "icon": "🧠",
-    "fallback_image": "https://cdn.qwiklabs.com/BJ2N2u1Fv5X4iAUMqC8A0JL6JnFRHHGw9QyRMEv5yqw%3D"
+    "icon": "\ud83e\udde0",
+    "fallback_image": "https://cdn.qwiklabs.com/9lB99Ij%2BMz%2FyOV0484V995beQHBMMCw0kimBFfZVtcM%3D"
   }
 ]
